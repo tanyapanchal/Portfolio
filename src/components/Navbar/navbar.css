@@ -1,0 +1,101 @@
+.navbar{
+    background-color: black;
+    height: 6.5rem;
+    width: 100%;
+    /* max-width: 75rem; */
+    margin:0 auto;
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    z-index: 3;
+}
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+}
+.menuListItem{
+    margin: 1rem;
+    cursor: pointer;
+    font-size: large;
+    
+    
+}
+.menuListItem:hover{
+    color:greenyellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid greenyellow;
+}
+.menubtn{
+    background: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+
+    /* margin-left: 25rem; */
+
+}
+.menubtn:hover{
+    border: 5px solid greenyellow;
+}
+.desktopimg{
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+}
+.desktopMenu{
+   margin-left: 2rem;
+}
+.active{
+    color: yellowgreen;
+    border-bottom: 3px solid yellowgreen;
+    padding-bottom: 0.5rem;
+}
+
+/* Hamberger menu */
+.mobMenu{
+    height: 2.8rem;
+    width: 50px;
+    display: none;
+    object-fit: cover;
+}
+.navMenu{
+    position: absolute;
+    top :4rem;
+    right: 3rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    /* height: fit-content; */
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1 rem;
+}
+
+.listItem{
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30,30,30);
+}
+@media screen and (max-width:720px) 
+
+{
+ 
+    .mobMenu{
+        display: flex;
+    }
+    .desktopMenu{
+        display: none;
+    }
+}
